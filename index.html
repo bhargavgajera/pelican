@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<meta name="msapplication-tap-highlight" content="no" />
+<title>pelican HEALTHCARE</title>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css" />
+<link rel="stylesheet" href="css/pelican.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.3.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.waitforimages.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.ui.datepicker.js"></script>
+<script src="js/jquery.mobile.datepicker.js"></script>
+</head>
+<body>
+<div data-role="page" id="home" class="homepage" >
+  <div class="top-img"><img src="images/aec-logo.jpg" width="189" alt=""></div>
+  <div class="logo-section"><img src="images/logo.png" width="219" alt=""></div>
+  <div class="custom-links"> <a href="#" class="ui-btn ui-corner-all ui-btn-b currenty-use"><span>I currently use</span><span class="right-text">Home Delivery</span></a> <a href="#form-1" data-transition="slide" class="ui-btn ui-corner-all ui-btn-a currenty-notuse ui-btn-active"><span>I would like to join</span><span class="right-text">Home Delivery</span></a> </div>
+  <div class="re-order-button"><a class="button" data-transition="slide" href="#reorder-log-in-form">Reorder</a></div>
+  <div class="bottom-strip">&nbsp;</div>
+</div>
+<div data-role="page" id="form-1" class="subpage" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Home Delivery</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Registration</h2>
+    </div>
+    <form action="#" method="post" id="contact-form" class="registration-form">
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a" data-icon="custom">
+          <option value="#">Mr</option>
+          <option value="#">Mrs</option>
+          <option value="#">Miss</option>
+          <option value="#">Ms</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <input name="name" placeholder="First Name" id="name" value="" type="text" required>
+      </fieldset>
+      <fieldset>
+        <input name="surname" id="surname" placeholder="Surname" value="" type="text" required>
+      </fieldset>
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea placeholder="Address" cols="40" rows="8" name="address" id="address" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <input name="Postcode" placeholder="Postcode" id="postcode" value="" type="text" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Telephone" name="Telephone" id="Telephone" value="" type="text" required>
+      </fieldset>
+      <fieldset class="drop-arrow">
+        <input placeholder="Date Of Birth" data-role="date" type="text">
+      </fieldset>
+      
+      <!-- <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a"  data-icon="custom">
+          <option value="#">Date Of Birth</option>
+          <option value="#">Date Of Birth Two</option>
+          <option value="#">Date Of Birth Three</option>
+        </select>
+      </fieldset> -->
+      
+      <div class="sub-title">
+        <h2>About You</h2>
+      </div>
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea placeholder="If you are not at home, is there somewhere safe we can leave your delivery? (e.g. shed /with neighbour?)" cols="40" rows="8" name="address" id="address" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a" data-icon="custom">
+          <option value="#">What type of stoma do you have?</option>
+          <option value="#">Colostomy</option>
+          <option value="#">Ileostomy</option>
+          <option value="#">Urostomy</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <input name="stoma-size" id="stoma-size" placeholder="Stoma size (mm)" value="" type="text" required>
+      </fieldset>
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a" data-icon="custom">
+          <option value="#">Would you like us to cut your pouches for you?</option>
+          <option value="#">Yes</option>
+          <option value="#">No</option>
+        </select>
+      </fieldset>
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a" data-icon="custom">
+          <option value="#">Do you require them cut to a template?</option>
+          <option value="#">Yes</option>
+          <option value="#">No</option>
+        </select>
+      </fieldset>
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2a" data-icon="custom">
+          <option value="#">Do you hold a medical exemption certificate?</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <small class="detail">If yes, please provide the following details:</small>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Certificate number" id="certificate-number"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Expiry date" id="expiry-date"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset>
+        <div class="separator"></div>
+      </fieldset>
+      <div class="ui-title title">
+        <h4>Hospital Details</h4>
+      </div>
+      <fieldset>
+        <input placeholder="Who is your stoma care nurse?" id="stoma-care"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset>
+        <div class="ui-textarea ui_textarea">
+          <textarea placeholder="At which hospital did you have your operation?" cols="40" rows="8" name="address" id="address" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <input placeholder="When did you have your operation?" data-role="date" type="text">
+      </fieldset>
+      <div class="ui-title title">
+        <h4>GP Details</h4>
+      </div>
+      <fieldset>
+        <input placeholder="GP’s name" id="gps-name"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea placeholder="GP’s address" cols="40" rows="8" name="address" id="gps-address" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Postcode" id="postcode"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset>
+        <input placeholder="GP’s Telephone" id="gp-telephone"  type="text" name="textfield" value="">
+      </fieldset>
+      <fieldset class="check-box">
+        <div class="ui-checkbox">
+          <label for="checkbox-enhanced" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off">I confirm that I would like to join the Pelican Home Delivery Service</label>
+          <input name="checkbox-enhanced" id="checkbox-enhanced" data-enhanced="true" type="checkbox">
+        </div>
+      </fieldset>
+      <fieldset>
+        <a href="#form-2" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a>
+      </fieldset>
+      
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="form-2" class="subpage-2" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Password Creation</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Log-in details</h2>
+    </div>
+    <div class="log-in-detail">
+      <p>Please input your email below, and create a password. You will need to remember these every time you place an order.</p>
+    </div>
+    <form action="#" method="post" id="login-form" class="registration-form">
+      <fieldset>
+        <input name="Email" id="email" placeholder="Email" value="" type="text" required>
+      </fieldset>
+      <fieldset>
+        <input name="Email" id="email" placeholder="Password" value="" type="text" required>
+      </fieldset>
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#form-3" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="form-3" class="subpage-3" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Customer Service Confirmation</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Almost there...</h2>
+    </div>
+    <div class="page-contant">
+      <p>To complete the registration process our customer service team will need to speak to you to confirm product usage and take your first order.</p>
+      <p>Once complete you will be all set up to place your <a href="#">next</a> order via the app</p>
+    </div>
+    <a href="#form-4" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+    <!--<form action="#" method="post" id="page-form" class="registration-form">
+      <button  class="btnSubmit submit-button ui-btn ui-shadow ui-corner-all">Submit</button>
+    </form>--> 
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="form-4" class="subpage-4" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Customer Service Confirmation</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="page-contant">
+      <p>Please select a day & time for a member of our friendly customer services team to contact you:</p>
+    </div>
+    <div class="time-table">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="24%" align="center">Monday</td>
+          <td width="61%" align="center">8am - 12pm</td>
+          <td width="15%" align="center"><div class="radio-button">
+              <input type="radio" name="mon-time" id="radio" value="radio">
+              <label for="radio"></label>
+            </div></td>
+        </tr>
+        <tr>
+          <td align="center">Monday</td>
+          <td align="center">12pm - 4pm</td>
+          <td align="center"><div class="radio-button">
+              <input type="radio" name="mon-time" id="radio2" value="radio2">
+              <label for="radio2"></label>
+            </div></td>
+        </tr>
+        <tr>
+          <td align="center">Monday</td>
+          <td align="center">4pm - 6pm</td>
+          <td align="center"><div class="radio-button">
+              <input type="radio" name="mon-time" id="radio3" value="radio3">
+              <label for="radio3"></label>
+            </div></td>
+        </tr>
+      </table>
+      <div class="dashed-line"></div>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="24%" align="center">Tuesday</td>
+          <td width="61%" align="center">8am - 12pm</td>
+          <td width="15%" align="center"><div class="radio-button">
+              <input type="radio" name="tue-time" id="radio4" value="radio4">
+              <label for="radio4"></label>
+            </div></td>
+        </tr>
+        <tr>
+          <td align="center">Tuesday</td>
+          <td align="center">12pm - 4pm</td>
+          <td align="center"><div class="radio-button">
+              <input type="radio" name="tue-time" id="radio5" value="radio5">
+              <label for="radio5"></label>
+            </div></td>
+        </tr>
+        <tr>
+          <td align="center">Tuesday</td>
+          <td align="center">4pm - 6pm</td>
+          <td align="center"><div class="radio-button">
+              <input type="radio" name="tue-time" id="radio6" value="radio6">
+              <label for="radio6"></label>
+            </div></td>
+        </tr>
+      </table>
+    </div>
+    <a href="#form-5" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+    <!--<form action="#" method="post" id="page-form" class="registration-form">
+      <button type="submit" class="btnSubmit submit-button ui-btn ui-shadow ui-corner-all">Submit</button>
+    </form>--> 
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="form-5" class="sub-page-5">
+  <div class="thankyoupage ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="home" tabindex="0" style="">
+    <div class="top-img"><img width="189" alt="" src="images/aec-logo.jpg"></div>
+    <div class="message">
+      <h5>Thank you For registering!</h5>
+      <p>A member of our customer Services team will contact you at your suggested time.</p>
+    </div>
+    <div class="logo-section"><a href="#home" data-transition="slide" class="home-link"><img width="219" alt="" src="images/logo.png"></a></div>
+    <div class="custom-links"> </div>
+    <div class="bottom-strip">&nbsp;</div>
+  </div>
+</div>
+<div data-role="page" id="reorder-log-in-form" class="subpage-6" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Log in</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Log-in details</h2>
+    </div>
+    <form action="#" method="post" id="login-form" class="registration-form">
+      <fieldset>
+        <input name="Email" id="email" placeholder="Email" value="" type="text" required>
+      </fieldset>
+      <fieldset>
+        <input name="Email" id="email" placeholder="Password" value="" type="text" required>
+      </fieldset>
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#secound-order" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+    <div class="separator space-bar"></div>
+    <div class="log-in-detail">
+      <p>If you have forgotten your password, please input your email below, and we will send you a link to change it</p>
+    </div>
+    <form action="#" method="post" id="order-login" class="registration-form">
+      <fieldset>
+        <input name="Email" id="email-address" placeholder="Email" value="" type="text" required>
+      </fieldset>
+      
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+      
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="secound-order" class="orderpage" >
+  <div class="top-img"><img src="images/aec-logo.jpg" width="189" alt=""></div>
+  <div class="logo-section"><img src="images/logo.png" width="219" alt=""></div>
+  <div class="custom-links"> <a href="#order-form" data-transition="slide" class="ui-btn ui-corner-all ui-btn-b currenty-use"><span>I would like to place my next order</span></a> <a href="#" data-transition="slide" class="ui-btn ui-corner-all ui-btn-a currenty-notuse ui-btn-active account"><span>My account</span></a> </div>
+  <div class="bottom-strip">&nbsp;</div>
+</div>
+<div data-role="page" id="order-form" class="order-form" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Order Form</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Order Form</h2>
+    </div>
+    <div class="log-in-detail">
+      <p>Please complete the order form below, by inputting the quantities of your regular products.</p>
+    </div>
+    <form action="#" method="post" id="order-form-1" class="registration-form">
+      <div class="product-description">
+        <table width="100%" border="1" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="15%" align="center" valign="middle"><strong>Code</strong></td>
+            <td width="57%" align="center" valign="middle"><strong>Product Description</strong></td>
+            <td width="28%" align="center" valign="middle"><strong>Quantity</strong></td>
+          </tr>
+          <tr>
+            <td align="center">333</td>
+            <td>Pelican dry wipes</td>
+            <td><input type="number" placeholder="0" name="textfield2" id="quantity-field"></td>
+          </tr>
+          <tr>
+            <td height="24" align="center">222</td>
+            <td>Pelican blue disposal bags</td>
+            <td><input type="number" placeholder="0" name="textfield3" id="quantity-field2"></td>
+          </tr>
+          <tr>
+            <td align="center">113412</td>
+            <td>Pelican Select Convex Drainable</td>
+            <td><input type="number" placeholder="0" name="textfield4" id="quantity-field3"></td>
+          </tr>
+          <tr>
+            <td align="center">839005</td>
+            <td>Cohesive SLIMS</td>
+            <td><input type="number" placeholder="0" name="textfield5" id="quantity-field4"></td>
+          </tr>
+        </table>
+      </div>
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#add-info-form" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="add-info-form" class="additional-info-form" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Additional Info</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Additional Info</h2>
+    </div>
+    <form action="#" method="post" id="info-form-1" class="registration-form">
+      <fieldset class="small-disc">
+        <label>Do you require the pouches cut to your regular template?</label>
+      </fieldset>
+      <fieldset class="select-fild">
+        <select name="select-v-2a" id="select-v-2x" data-icon="custom">
+          <option value="#">Yes</option>
+          <option value="#">No</option>
+        </select>
+      </fieldset>
+      <div class="sub-title comment">
+        <h2>Further Comments</h2>
+      </div>
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea cols="40" rows="8" name="address" id="gps-address" required></textarea>
+        </div>
+      </fieldset>
+      
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#delivery-form" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="delivery-form" class="delivery-page" >
+  <div data-role="header" class="ui-header header">
+    <h1 class="main-title">Delivery</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <div class="sub-title">
+      <h2>Delivery</h2>
+    </div>
+    <form action="#" method="post" id="delivery-form-1" class="registration-form">
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea cols="40" placeholder="Home Address" rows="8" name="address" id="home-address" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="ui-textarea">
+          <textarea cols="40" placeholder="Other..." rows="8" name="address" id="other-address" required></textarea>
+        </div>
+      </fieldset>
+      
+      <!--<button class="btnSubmit ui-shadow ui-corner-all submit-button" type="submit">Submit</button>--> 
+      <a href="#thank-you-page" data-transition="slide" class="ui-btn btnSubmit submit-button ui-shadow ui-corner-all">Submit</a> 
+      <!--<input  value="" data-icon="custom" data-theme="a" type="button">-->
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+<div data-role="page" id="thank-you-page" class="thank-you-page">
+  <div class="thankyoupage ui-page ui-page-theme-a ui-page-active" id="home" data-role="page" data-url="home" tabindex="0" style="">
+    <div class="top-img"><img width="189" alt="" src="images/aec-logo.jpg"></div>
+    <div class="message">
+      <h5>Thank you for your order.</h5>
+      <p>You will receive email notification shortly</p>
+      <p>Your order will be despatched when we receive your prescription.</p>
+      <p>if you have any queries, please <br>
+        call 0800 318 282</p>
+    </div>
+    <div class="logo-section"><a href="#home" data-transition="slide" class="home-link"><img width="219" alt="" src="images/logo.png"></a></div>
+    <div class="custom-links"> </div>
+    <div class="bottom-strip">&nbsp;</div>
+  </div>
+</div>
+</body>
+</html>

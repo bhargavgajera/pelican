@@ -1,0 +1,113 @@
+body { margin: 0px; padding: 0px; }
+a { text-decoration: none; list-style: none; }
+.clear { clear: both; }
+.ui-mobile .ui-page{ }
+input[type="text"]:focus { box-shadow: none !important }
+.ui-header { border-bottom: 1px solid #919396; border-top: 0px; }
+.ui-header.header { font-size: 30px; margin: 0px; padding: 0px; }
+.registration-form .ui-select .ui-btn > span:not(.ui-li-count) { text-align: left }
+.registration-form .ui-select .ui-btn.ui-icon-custom.ui-btn-icon-right.ui-corner-all.ui-shadow { background: none; color: #919396; border: 2px solid #919396; font-size: 15px; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; height: 23px; line-height: 23px; font-family: 'Arimo', sans-serif; font-weight: 700; }
+.registration-form .ui-select .ui-btn { padding: 0.2em 1em; }
+.registration-form .select-fild { background: url(../images/drop-arrow.jpg) no-repeat right center; background-size: 25px auto; }
+.registration-form .select-fild .ui-btn-icon-right:after { right: -100% }
+input[type="text"], input[type="surname"], input[type="postcode"] { background: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #919396; font-family: 'Arimo', sans-serif; font-weight: 700; font-size: 15px; font-weight: bold; width: 100%; border: 2px solid #919396; margin: 0px; padding: 5px 12px; box-shadow: none !important; line-height: normal; min-height: 29px; text-shadow: none; }
+.registration-form .ui-textarea textarea { height: 150px !important; background: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #919396; font-family:'Arimo', sans-serif; font-weight:700; font-size: 15px; font-weight: bold; width: 100%; border: 2px solid #919396; box-shadow: none; padding: 11px 12px; margin: 10px 0 5px 0 0 0; resize: none; text-shadow: none; }
+.ui-textarea.ui_textarea textarea { height: 67px !important; }
+ .registration-form .ui-input-text input::-moz-placeholder, .registration-form .ui-input-search input::-moz-placeholder, .registration-form textarea.ui-input-text::-moz-placeholder {
+color:#919396 !important;
+opacity:1;
+}
+.registration-form .ui-shadow, .registration-form .ui-shadow-inset { box-shadow: none; }
+.submit-button { font-size: 15px; margin: 25px 0 15px 0; font-family:'Arimo', sans-serif; font-weight:700; }
+.sub-title { background: none repeat scroll 0 0 #6e298d; border: 1px solid #919396; /*border-radius: 8px;*/ margin: 12px auto 10px; padding: 0; width: 100%; }
+.sub-title h2 { color: #fff;  font-size: 15px; font-weight: normal; line-height: 40px; text-align: center; margin: 0px; padding: 0px; font-family: 'Arimo', sans-serif; font-weight: 700; text-shadow:none; }
+.ui-header.header h1.main-title { font-size: 15px; font-family: 'Old Standard TT', serif; font-weight: 400; }
+.registration-form .ui-input-text, .registration-form .ui-input-search { border: none; margin: 8px 0 0; }
+.registration-form .ui-select { margin: 5px 0 0 0; }
+.custom-links { display: block; overflow: hidden; margin: 0 0px; padding: 20px 0px 0; width: 100%; padding-bottom: 100px; }
+.custom-links a { clear: both; display: block; font-size: 15px; font-weight: bold; border: 2px solid #919396; box-shadow: none; padding: 11px 12px; display: block; overflow: hidden; margin: 0 10px 10px; text-align: left; font-family: 'Arimo', sans-serif; font-weight: 700; }
+.custom-links a span { float: left; width: 50%; }
+.custom-links a .right-text { text-align: right; float: right; font-family: 'Old Standard TT', serif; font-weight: 700; }
+a.currenty-use { border-color: #6e298d !important; }
+a.currenty-notuse { background-color: #fff !important; color: #6e298d !important }
+a.currenty-use.ui-btn:hover { color: #6e298d; border-color: #8c8c8c !important; }
+a.currenty-notuse:hover, html a.currenty-notuse:hover { border-color: #6e298d !important; color: #fff !important; text-shadow: none !important; background: #6e298d !important }
+.homepage,.orderpage,.thankyoupage  { width: 100%; background: url(../images/top-bar.jpg) repeat-x 0 0; background-size: auto 103px; }
+.top-img { float: left; width: 100%; width: 100%; height: 100%; background: url(../images/header-crv.png) no-repeat 100% 0; height: 170px; text-align: right; background-size: 320px auto; }
+.top-img img { margin: 25px 25px 0 0; max-width: 100% }
+.logo-section { text-align: right; padding-right: 25px }
+.homepage img,.thankyoupage img { max-width: 100% }
+.bottom-strip { background: url(../images/footer-bg.jpg) repeat-x 100% 100% / 200% 180px; bottom: 0; height: 170px; left: 0; position: absolute; width: 100%; }
+.homepage { position: relative }
+.thankyoupage .logo-section{ padding-bottom:50px}
+.orderpage .custom-links{ padding-bottom:170px}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation:landscape) {
+.top-img img { margin: 10px 15px 0 0 }
+.homepage,.orderpage,.thankyoupage { background-position: 0 -35px }
+.top-img { height: 135px; background-position: 100% -35px }
+}
+ @media only screen and (min-device-width: 320px) and (max-device-width: 540px) and (orientation:portrait) {
+.top-img { height: 170px }
+.top-img img { margin: 10px 10px 0 0; }
+}
+.detail { margin: 5px 0; display: block; padding: 0px 0 0px 2px; clear: both; font-style: italic; font-family:'Old Standard TT', serif; font-weight:400; font-size: 18px; color: #919396; }
+.separator { margin: 10px -20px 0; padding: 0px; border: 1px solid #6e2a8d; }
+.ui-title.title { margin: 20px 0 10px; padding: 0px; clear: both; display: block }
+.ui-title.title h4 { font-family:'Arimo', sans-serif; font-weight:700; font-size: 22px; color: #919396; text-shadow: none; margin: 0px; padding: 0px; }
+.check-box { margin: 0px; padding: 0px; }
+.check-box label { border: none; color: #919396 !important; font-size: 15px;  font-style: italic; font-weight: normal; background: none !important; margin: 0px; padding: 0px 0 0 51px; border-radius: 0px !important; }
+.check-box .ui-checkbox .ui-btn.ui-corner-all.ui-btn-inherit.ui-btn-icon-left.ui-checkbox-off { background: none !important; border: none !important }
+.check-box .ui-checkbox input, .ui-radio input { z-index: -1 }
+.check-box .ui-btn.ui-checkbox-off:after, .ui-btn.ui-checkbox-on:after { border: 4px solid #808080 !important; border-radius: 0px; height: 27px; width: 27px; opacity: 1; margin: 0px 0 0 -6px; padding: 0px; }
+.check-box .ui-checkbox label{font-family: 'Old Standard TT', serif !important; font-weight:400; }
+.check-box .ui-btn.ui-checkbox-off:after { background-color: #fff; }
+.check-box .ui-checkbox { margin: 21px 0 5px 0; padding: 0px; }
+.ui-btn.ui-checkbox-off:after, .ui-btn.ui-checkbox-on:after { margin-top: -19px !important; }
+.log-in-detail { margin: 0px; padding: 0px 0 15px 0; }
+.log-in-detail p, .page-contant p { font-family: 'Old Standard TT', serif; font-weight: 400;  font-size: 15px; color: #919396; margin: 0px; padding: 0px; line-height: 22px; text-shadow: none; font-style: italic }
+.page-contant p { margin: 0px; padding: 0px 0 10px 0; text-align: center }
+.page-contant p a { font-weight: bold; }
+.page-contant p a:hover { color: #000 }
+.time-table table { border: 1px solid #6e2a8d; }
+.time-table tr td { border: 1px solid #6e2a8d; font-family: 'Old Standard TT', serif; font-weight: 400;  font-size: 14px; color: #6e2a8d; }
+.dashed-line { border-top: 2px dashed #6e2a8d; margin: 10px -28px; height: 1px; padding: 0px; }
+.message { clear: both; display: block; margin: 0; padding: 0; }
+.message h5 { font-family:'Arimo', sans-serif; font-weight:700; color: #6e2a8d; text-shadow: none; font-size: 20px; text-align: center; margin: 0px; padding: 0px 0 25px 0; font-weight: normal; }
+.message p { font-family: 'Old Standard TT', serif; font-weight: 400; font-size: 14px; margin: 0px; padding: 0px 20px 20px 20px; color: #6e2a8d; text-align: center; text-shadow: none; }
+div.hasDatepicker { display: block; margin: 8px 0; max-width: 340px; overflow: visible; padding: 0; }
+.ui-datepicker { margin: 0; overflow: visible; width: 91%; }
+.ui-datepicker .ui-datepicker-header { border-bottom: 0 none; font-weight: bold; padding: 0.6em 0; position: relative; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { margin-top: 0; padding: 1px 0 1px 2px; position: absolute; text-indent: -9999px; top: 0.6em; }
+.ui-datepicker .ui-datepicker-prev { left: 9px; }
+.ui-datepicker .ui-datepicker-next { right: 2px; }
+.ui-datepicker .ui-datepicker-title { line-height: 1.8em; margin: 0 2.3em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size: 1em; margin: 1px 0; }
+.ui-datepicker select.ui-datepicker-month-year { width: 100%; }
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 49%; }
+.ui-datepicker table { border-collapse: collapse; margin: 0; width: 100%; }
+.ui-datepicker td { border-width: 1px; padding: 0; text-align: center; }
+.ui-datepicker td span, .ui-datepicker td a { border-width: 0; display: block; font-weight: bold; margin: 0; padding: 0.2em 0; text-align: center; text-decoration: none; }
+.ui-datepicker-calendar th { padding-bottom: 0.4em; padding-top: 0.4em; }
+.ui-datepicker-calendar th span, .ui-datepicker-calendar span.ui-state-default { opacity: 0.7; }
+.ui-datepicker-calendar td a { padding: 0.6em 0.5em; }
+.radio-button { margin: 0px; padding: 0px; }
+.radio-button .ui-radio .ui-radio-off, .radio-button .ui-radio .ui-btn.ui-radio-on { background: none; margin: 0px 0 0 0; border: none; }
+.radio-button .ui-btn.ui-radio-off:after, .ui-btn.ui-radio-on:after { opacity: 1; background: none; border: 3px solid #6e2a8d; width: 12px; height: 12px; margin: -9px 0 0 -4px }
+.radio-button .ui-radio .ui-btn.ui-radio-on:after { margin: -9px 0 0 -4px; padding: 0px; background: #6e2a8d; }
+.radio-button .ui-btn.ui-corner-all.ui-btn-inherit.ui-btn-icon-left.ui-radio-off, .radio-button .ui-btn.ui-corner-all.ui-btn-inherit.ui-btn-icon-left.ui-radio-on { width: 29px; height: 19px; margin: 0px 0 0 0; padding: 0px; }
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-body-a.ui-corner-top { background: none repeat scroll 0 0 #f1f1f1; }
+.drop-arrow { margin: 0px; padding: 0px; position: relative }
+.hasDatepicker { background: url("../images/drop-arrow.jpg") no-repeat scroll right 9px / 25px auto rgba(0, 0, 0, 0) !important; cursor: pointer }
+.space-bar { margin-bottom: 10px; }
+a.account span { text-align: center; width: 100%; font-family:'Arimo', sans-serif; font-weight:700; }
+.product-description table tr td { border: 1px solid #919396; padding: 0 4px;font-family: 'Old Standard TT', serif; font-weight:400; font-size: 14px; color: #6e2a8d; text-shadow: none; font-style: italic }
+.product-description strong { font-size: 13px; font-family:'Arimo', sans-serif; font-weight:700; color: #6e2a8d; margin: 0px; padding: 10px 0; display: block; text-shadow: none; font-style: normal; }
+.product-description .ui-input-text, .product-description .ui-input-search { margin: 5px 0 6px; }
+.product-description .ui-input-text input, .product-description .ui-input-search input { padding: 2px 5px; font-size: 14px; border: 2px solid #919396 }
+.thank-you-page .message h5 { padding-bottom: 10px; }
+.re-order-button a.button { background: #6e298d; margin: 0 12px 40px 0; padding: 8px 20px; font-size: 15px; border-radius: 5px; position: relative; z-index: 1; color: #fff; text-align: center; line-height: 21px; text-shadow: none; display: inline-block; float: right; border: 2px solid #6e298d; font-family: 'Arimo', sans-serif; font-weight: 700; }
+.re-order-button a.button:hover { background: #fff; color: #6e298d; border-color: #919396; }
+.small-disc label { font-size: 15px; font-family: 'Old Standard TT', serif; font-weight:700; color: #919396; text-shadow: none; margin: 0px; }
+.comment { margin: 34px auto 16px; padding: 0px; }
+.product-description placeholder { opacity: 1 }
